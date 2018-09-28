@@ -1,0 +1,163 @@
+.tm-team-member {
+	position: relative;
+
+	.position {
+		font-size: 13px;
+		font-weight: 500;
+	}
+
+	&.style-1 {
+		@extend %transit;
+		margin-bottom: 30px;
+		border-radius: 5px;
+		overflow: hidden;
+		background: #fff;
+
+		&:hover {
+			box-shadow: 0 10px 20px rgba(0, 0, 0, .09);
+
+			.info {
+				transform: translateY(0);
+			}
+
+			.social-footer {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+
+		&.effect-grayscale {
+			.photo {
+				img {
+					@extend %transit2;
+					filter: grayscale(100%);
+				}
+			}
+
+			&:hover {
+				.photo {
+					img {
+						filter: none;
+					}
+				}
+			}
+		}
+
+		.photo {
+			img {
+				width: 100%;
+			}
+		}
+
+		.info {
+			@extend %transit;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			padding: 27px 25px;
+			background: #fff;
+			transform: translateY(46px);
+		}
+
+		.name {
+			font-size: 18px;
+			margin-bottom: 3px;
+		}
+
+		.description {
+			margin-top: 10px;
+		}
+
+		.social-footer {
+			@extend %transit;
+			visibility: hidden;
+			opacity: 0;
+			margin-top: 20px;
+		}
+
+		.social-networks {
+			margin: 0 -10px;
+
+			a {
+				@extend %transit2;
+				display: inline-block;
+				padding: 5px 10px;
+				font-size: 18px;
+				line-height: 1;
+				color: #c0c0c0;
+			}
+		}
+	}
+
+	&.style-2 {
+		.inner {
+			display: flex;
+		}
+
+		.photo {
+			flex-shrink: 0;
+
+			img {
+				border-radius: 5px;
+			}
+		}
+
+		.info {
+			position: relative;
+			flex-grow: 1;
+			padding: 11px 35px 85px 40px;
+		}
+
+		.name {
+			font-size: 24px;
+			font-weight: 700;
+			line-height: 1.38;
+			margin-bottom: 5px;
+		}
+
+		.position {
+			margin-bottom: 29px;
+			font-size: 15px;
+			font-weight: 600;
+		}
+
+		.social-networks {
+			position: absolute;
+			bottom: 55px;
+			left: 38px;
+
+			a {
+				font-size: 18px;
+				color: #c0c0c0;
+				padding: 3px 8px;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.tm-team-member {
+		&.style-2 {
+			.inner {
+				display: block;
+
+				.photo {
+					img {
+						width: 100%;
+					}
+				}
+
+				.info {
+					padding: 40px 0 0;
+				}
+
+				.social-networks {
+					position: static;
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+}
+

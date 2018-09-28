@@ -1,0 +1,21 @@
+.tagcloud {
+	@extend %clearfix;
+	margin: -5px;
+	a {
+		display: block;
+		float: left;
+		font-size: 15px !important;
+		font-weight: 500;
+		background: #ffffff;
+		border: 0;
+		border-radius: 5px;
+		padding: 12px 29px;
+		margin: 5px;
+		box-shadow: 0 10px 10px rgba(0, 0, 0, .06);
+		
+		&:hover {
+			color: #ffffff !important;
+			box-shadow: none;
+		}
+	}
+}

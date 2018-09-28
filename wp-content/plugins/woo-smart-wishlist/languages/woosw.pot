@@ -1,0 +1,254 @@
+# Copyright (C) 2018 WooCommerce Smart Wishlist
+# This file is distributed under the same license as the WooCommerce Smart Wishlist package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Smart Wishlist\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: woo-smart-wishlist-premium/index.php:89, woo-smart-wishlist-premium/index.php:605
+msgid "Wishlist"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:151, woo-smart-wishlist-premium/index.php:182
+msgid "Please log in to use Wishlist!"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:162
+msgid "Added to Wishlist!"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:164
+msgid "Already in your Wishlist!"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:171, woo-smart-wishlist-premium/index.php:204
+msgid "Have an error, please try again!"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:195
+msgid "Removed from Wishlist!"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:197
+msgid "There are no products on your Wishlist!"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:200
+msgid "The product does not exist on your Wishlist!"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:217, woo-smart-wishlist-premium/index.php:244, woo-smart-wishlist-premium/index.php:401, woo-smart-wishlist-premium/index.php:539
+msgid "Add to Wishlist"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:220, woo-smart-wishlist-premium/index.php:247, woo-smart-wishlist-premium/index.php:409, woo-smart-wishlist-premium/index.php:540
+msgid "Browse Wishlist"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:274
+msgid "Share on:"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:275
+msgid "Facebook"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:276
+msgid "Twitter"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:277
+msgid "Pinterest"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:278
+msgid "Google Plus"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:279
+msgid "Mail"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:288, woo-smart-wishlist-premium/index.php:288
+msgid "Woo Wishlist"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:302
+msgid "Thank you for using our plugin! If you are satisfied, please reward it a full five-star %s rating."
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:305
+msgid "Reviews"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:307
+msgid "Changelogs"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:309
+msgid "Discussion"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:315, woo-smart-wishlist-premium/index.php:555
+msgid "Settings"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:317, woo-smart-wishlist-premium/index.php:556
+msgid "Support"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:328
+msgid "Disable the wishlist for unauthenticated users"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:333, woo-smart-wishlist-premium/index.php:366
+msgid "Yes"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:337, woo-smart-wishlist-premium/index.php:370
+msgid "No"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:347
+msgid "Wishlist page"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:352
+msgid "Choose a page"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:356
+msgid "Add shortcode %s to display the wishlist on a page."
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:361
+msgid "Share buttons"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:374
+msgid "Enable share buttons on the wishlist page?"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:383
+msgid "Type"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:388
+msgid "Button"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:392
+msgid "Link"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:398
+msgid "Text"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:402
+msgid "button text"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:406
+msgid "Text (added)"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:410
+msgid "button text (added)"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:414
+msgid "Extra class (optional)"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:419
+msgid "Add extra class for action button/link, split by one space."
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:424
+msgid "Position on archive page"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:429, woo-smart-wishlist-premium/index.php:460
+msgid "After title"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:433
+msgid "After rating"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:437
+msgid "After price"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:441, woo-smart-wishlist-premium/index.php:472
+msgid "Before add to cart"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:445, woo-smart-wishlist-premium/index.php:476
+msgid "After add to cart"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:449, woo-smart-wishlist-premium/index.php:488
+msgid "None"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:455
+msgid "Position on single page"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:464
+msgid "After price & rating"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:468
+msgid "After excerpt"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:480
+msgid "After meta"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:484
+msgid "After sharing"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:494
+msgid "Shortcode"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:497
+msgid "You can add the button by manually, please use the shortcode %s, eg. %s for the product with ID is 99."
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:506
+msgid "Update Options"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:585
+msgid "In stock"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:585
+msgid "Out of stock"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:592
+msgid "There are no products on Wishlist!"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:613
+msgid "Open Wishlist Page"
+msgstr ""
+
+#: woo-smart-wishlist-premium/index.php:616
+msgid "Continue Shopping"
+msgstr ""

@@ -1,0 +1,62 @@
+.tm-circle-progress-chart {
+	margin-bottom: 30px;
+	text-align: center;
+	
+	.chart {
+		position: relative;
+		margin: 0 auto 40px;
+		width: 126px;
+		height: 126px;
+		
+		canvas {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+	
+	.inner-content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	
+	.chart-number {
+		font-size: 42px;
+		line-height: 1;
+		
+		span {
+			vertical-align: super;
+			font-size: 20px;
+		}
+	}
+	
+	.chart-icon {
+		font-size: 55px;
+	}
+	
+	.inner-circle {
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+	}
+	
+	.title-wrap {
+		margin-bottom: 32px;
+	}
+	
+	.title {
+		font-size: 20px;
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.tm-circle-progress-chart {
+		margin-bottom: 50px;
+		
+		.chart {
+			margin-bottom: 30px;
+		}
+	}
+}

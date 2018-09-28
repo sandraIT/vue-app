@@ -1,0 +1,54 @@
+input[type='checkbox'] {
+	position: relative;
+	background: transparent;
+	border-width: 0;
+	box-shadow: none;
+	margin: 0 10px 0 0;
+	cursor: pointer;
+	
+	&:before {
+		content: '';
+		display: block;
+		width: 18px;
+		height: 18px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin-top: -9px;
+		margin-left: -9px;
+		background: #ffffff;
+		border: 1px solid #e7e7e7;
+		transition: background .3s ease, border-color .3s ease;
+	}
+	
+	&:after {
+		content: '\f122';
+		font-family: 'Ionicons';
+		font-size: 12px;
+		font-weight: 500;
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		color: #ffffff;
+		transform: translate(-50%, -50%) scale(0);
+		transition: transform .3s ease;
+	}
+	
+	&:hover {
+		&:before {
+			border-color: #222222;
+		}
+	}
+	
+	&:checked {
+		&:before {
+			background: #222222;
+			border-color: #222222;
+		}
+		
+		&:after {
+			transform: translate(-50%, -50%) scale(1);
+		}
+	}
+}

@@ -1,0 +1,240 @@
+.tm-card {
+	position: relative;
+	
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	
+	.content-wrap {
+		position: relative;
+	}
+	
+	&.style-1 {
+		@extend %transit2;
+		overflow: hidden;
+		color: #ffffff;
+		border-radius: 5px;
+		padding: 40px 30px;
+		box-shadow: 0 0 41px rgba(0, 0, 0, .03);
+		
+		&:hover {
+			transform: translateY(-10px);
+			box-shadow: 0 20px 41px rgba(0, 0, 0, .15);
+		}
+		
+		.heading {
+			font-size: 24px;
+			font-weight: 700;
+			line-height: 1.5;
+			margin-bottom: 23px;
+			color: #ffffff;
+			
+			span {
+				position: absolute;
+				top: 50%;
+				right: 0;
+				transform: translate(0, -50%);
+			}
+			
+			a {
+				position: relative;
+				padding-right: 20px;
+				display: block;
+				color: inherit;
+			}
+		}
+		
+		.icon {
+			font-size: 200px;
+			position: absolute;
+			bottom: -63px;
+			right: -27px;
+			line-height: 0;
+			color: rgba(255, 255, 255, .2)
+		}
+		
+		.phone-number {
+			font-size: 40px;
+			color: inherit;
+			line-height: 1.4;
+			margin-bottom: 16px;
+		}
+		
+		.menu-list {
+			font-size: 16px;
+			list-style-type: none;
+			margin: 0 0 20px;
+			padding: 0;
+		}
+		
+		.menu-item {
+			+ .menu-item {
+				margin-top: 8px;
+			}
+		}
+		
+		.menu-header {
+			@extend %clearfix;
+			position: relative;
+			display: flex;
+			align-items: flex-end;
+			flex-wrap: wrap;
+		}
+		
+		.separator {
+			border-top: 1px dashed rgba(255, 255, 255, .5);
+			flex-grow: 1;
+			margin-left: 5px;
+			margin-right: 5px;
+			position: relative;
+			top: -9px;
+		}
+		
+		.menu-title {
+			position: relative;
+			z-index: 1;
+			display: inline;
+			padding-right: 10px;
+			flex-shrink: 0;
+		}
+		
+		.menu-sub-title {
+			position: relative;
+			z-index: 1;
+			flex-shrink: 0;
+		}
+	}
+	
+	&.style-2 {
+		@extend %transit2;
+		overflow: hidden;
+		border-radius: 5px;
+		padding: 48px 30px 43px;
+		box-shadow: 0 0 41px rgba(0, 0, 0, .07);
+		background-color: #ffffff;
+		
+		.card-header {
+			display: flex;
+		}
+		
+		&:hover {
+			transform: translateY(-10px);
+			box-shadow: 0 10px 41px rgba(0, 0, 0, .15);
+		}
+		
+		.icon {
+			position: relative;
+			font-size: 60px;
+			line-height: 0;
+			margin-right: 43px;
+			display: block;
+			margin-bottom: 18px;
+			
+			&:before {
+				content: '';
+				position: absolute;
+				top: -9px;
+				left: 12px;
+				height: 72px;
+				width: 72px;
+				border-radius: 50%;
+				opacity: .2;
+			}
+			
+			span {
+				position: relative;
+				z-index: 1;
+			}
+		}
+		
+		.heading {
+			font-size: 24px;
+			line-height: 1.5;
+			margin-bottom: 18px;
+			width: 69%;
+			word-break: break-word;
+			
+			span {
+				position: absolute;
+				top: 6px;
+				right: 0;
+			}
+			
+			a {
+				position: relative;
+				padding-right: 20px;
+				display: block;
+				color: inherit;
+			}
+		}
+		
+		.phone-number {
+			font-size: 40px;
+			color: inherit;
+			line-height: 1.4;
+			margin-bottom: 16px;
+		}
+		
+		.menu-list {
+			font-size: 16px;
+			list-style-type: none;
+			margin: 0 0 20px;
+			padding: 0;
+		}
+		
+		.menu-item {
+			+ .menu-item {
+				margin-top: 8px;
+			}
+		}
+		
+		.menu-header {
+			@extend %clearfix;
+			position: relative;
+			display: flex;
+			align-items: flex-end;
+			flex-wrap: wrap;
+		}
+		
+		.separator {
+			border-top: 1px dashed rgba(255, 255, 255, .5);
+			flex-grow: 1;
+			margin-left: 5px;
+			margin-right: 5px;
+			position: relative;
+			top: -9px;
+		}
+		
+		.menu-title {
+			position: relative;
+			z-index: 1;
+			display: inline;
+			padding-right: 10px;
+			flex-shrink: 0;
+		}
+		
+		.menu-sub-title {
+			position: relative;
+			z-index: 1;
+			flex-shrink: 0;
+		}
+	}
+}
+
+@media (min-width: 1420px) {
+	.tm-card {
+		&.style-1 {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+		
+		&.style-2 {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+	}
+}

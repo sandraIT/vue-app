@@ -1,0 +1,246 @@
+@font-face {
+	font-family: Flaticon;
+	src: url(Flaticon.eot);
+	src: url(Flaticon.eot?#iefix) format('embedded-opentype'),
+	url(Flaticon.svg#Flaticon) format('svg'),
+	url(Flaticon.woff) format('woff'),
+	url(Flaticon.ttf) format('truetype');
+
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^='flaticon-'], [class*=' flaticon-'] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: Flaticon !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-cup:before {
+	content: '\e936';
+}
+
+.flaticon-medal:before {
+	content: '\e900';
+}
+
+.flaticon-projector:before {
+	content: '\e901';
+}
+
+.flaticon-smile:before {
+	content: '\e902';
+}
+
+.flaticon-star:before {
+	content: '\e903';
+}
+
+.flaticon-bar-chart:before {
+	content: '\e904';
+}
+
+.flaticon-briefcase:before {
+	content: '\e905';
+}
+
+.flaticon-care:before {
+	content: '\e906';
+}
+
+.flaticon-chat:before {
+	content: '\e907';
+}
+
+.flaticon-coin-1:before {
+	content: '\e908';
+}
+
+.flaticon-coin:before {
+	content: '\e909';
+}
+
+.flaticon-contract:before {
+	content: '\e90a';
+}
+
+.flaticon-diamond:before {
+	content: '\e90b';
+}
+
+.flaticon-dollar:before {
+	content: '\e90c';
+}
+
+.flaticon-flag:before {
+	content: '\e90d';
+}
+
+.flaticon-goal:before {
+	content: '\e90e';
+}
+
+.flaticon-group:before {
+	content: '\e90f';
+}
+
+.flaticon-growth:before {
+	content: '\e910';
+}
+
+.flaticon-handshake:before {
+	content: '\e911';
+}
+
+.flaticon-hourglass:before {
+	content: '\e912';
+}
+
+.flaticon-humanpictos:before {
+	content: '\e913';
+}
+
+.flaticon-idea-1:before {
+	content: '\e914';
+}
+
+.flaticon-idea-2:before {
+	content: '\e915';
+}
+
+.flaticon-idea:before {
+	content: '\e916';
+}
+
+.flaticon-ipo:before {
+	content: '\e917';
+}
+
+.flaticon-laptop-1:before {
+	content: '\e918';
+}
+
+.flaticon-laptop:before {
+	content: '\e919';
+}
+
+.flaticon-light-bulb-1:before {
+	content: '\e91a';
+}
+
+.flaticon-light-bulb:before {
+	content: '\e91b';
+}
+
+.flaticon-like:before {
+	content: '\e91c';
+}
+
+.flaticon-line-chart:before {
+	content: '\e91d';
+}
+
+.flaticon-management:before {
+	content: '\e91e';
+}
+
+.flaticon-money-bag:before {
+	content: '\e91f';
+}
+
+.flaticon-networking-1:before {
+	content: '\e920';
+}
+
+.flaticon-networking-2:before {
+	content: '\e921';
+}
+
+.flaticon-networking:before {
+	content: '\e922';
+}
+
+.flaticon-package:before {
+	content: '\e923';
+}
+
+.flaticon-panel:before {
+	content: '\e924';
+}
+
+.flaticon-podium:before {
+	content: '\e925';
+}
+
+.flaticon-presentation:before {
+	content: '\e926';
+}
+
+.flaticon-puzzle:before {
+	content: '\e927';
+}
+
+.flaticon-settings:before {
+	content: '\e928';
+}
+
+.flaticon-sprout:before {
+	content: '\e929';
+}
+
+.flaticon-startup:before {
+	content: '\e92a';
+}
+
+.flaticon-stationery:before {
+	content: '\e92b';
+}
+
+.flaticon-target:before {
+	content: '\e92c';
+}
+
+.flaticon-team:before {
+	content: '\e92d';
+}
+
+.flaticon-teamwork:before {
+	content: '\e92e';
+}
+
+.flaticon-thinking:before {
+	content: '\e92f';
+}
+
+.flaticon-time:before {
+	content: '\e930';
+}
+
+.flaticon-trophy:before {
+	content: '\e931';
+}
+
+.flaticon-user-1:before {
+	content: '\e932';
+}
+
+.flaticon-user:before {
+	content: '\e933';
+}
+
+.flaticon-visualization:before {
+	content: '\e934';
+}
+
+.flaticon-worldwide:before {
+	content: '\e935';
+}

@@ -1,0 +1,65 @@
+.tm-view-demo {
+	text-align: center;
+	
+	.item-wrap {
+		@extend %transit;
+		
+		&:hover {
+			transform: translateY(-10px);
+			
+			.thumbnail {
+				box-shadow: 0 20px 40px rgba(0, 0, 0, .16);
+			}
+			
+			.overlay {
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+	}
+	
+	.thumbnail {
+		@extend %transit;
+		position: relative;
+		overflow: hidden;
+		margin-bottom: 40px;
+		border-radius: 10px;
+		box-shadow: 0 0 20px rgba(0, 0, 0, .11);
+		
+		> img {
+			border-radius: inherit;
+			width: 100%;
+		}
+	}
+	
+	.heading {
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+	
+	.overlay {
+		@extend %transit;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		visibility: hidden;
+		opacity: 0;
+		background: rgba(0, 0, 0, .1);
+	}
+	
+	.coming-item {
+		.overlay {
+			visibility: visible;
+			opacity: 1;
+			background: rgba(0, 0, 0, .3);
+		}
+	}
+	
+	.badge {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}

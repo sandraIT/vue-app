@@ -1,0 +1,60 @@
+.header-18 {
+	.header-wrap {
+		display: flex;
+		align-items: center;
+	}
+	
+	.wpml-ls-item-toggle {
+		padding: 18px 0;
+	}
+	
+	.desktop-menu & {
+		.page-navigation {
+			flex-grow: 1;
+		}
+		
+		.branding,
+		.header-right {
+			flex-shrink: 0;
+		}
+		
+		.menu--primary {
+			position: static;
+			text-align: right;
+		}
+	}
+	
+	.mobile-menu & {
+		.branding {
+			flex-grow: 1;
+		}
+		
+		.header-right {
+			flex-shrink: 0;
+		}
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.header-18 {
+		.desktop-menu & {
+			.page-header-inner > .container-fluid {
+				padding: 0 35px;
+			}
+			
+			.header-on-top-button {
+				min-width: 160px;
+			}
+		}
+	}
+}
+
+@media (min-width: 1820px) {
+	.header-18 {
+		.desktop-menu & {
+			.page-header-inner > .container-fluid {
+				padding: 0 85px;
+			}
+		}
+	}
+}

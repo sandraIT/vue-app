@@ -1,0 +1,43 @@
+.tm-custom-menu {
+	.widget {
+		margin: 0 !important;
+	}
+	
+	&.style-2 {
+		.menu {
+			@extend %clearfix;
+			margin: -8px -15px 0;
+			
+			> li {
+				width: 50%;
+				padding: 0 15px;
+				float: left;
+			}
+		}
+	}
+	
+	&.style-3 {
+		.menu {
+			@extend %clearfix;
+			margin: -8px -15px 0;
+			
+			> li {
+				padding: 0 15px;
+				position: relative;
+				display: inline-block;
+				
+				+ li {
+					&:before {
+						position: absolute;
+						width: 1px;
+						height: 20px;
+						top: 10px;
+						left: -1px;
+						content: '';
+						background-color: #d8d8d8;
+					}
+				}
+			}
+		}
+	}
+}

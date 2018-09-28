@@ -1,0 +1,64 @@
+.tm-gallery {
+	position: relative;
+	
+	img {
+		@extend %transit;
+		width: 100%;
+	}
+	
+	.gallery-item {
+		> a {
+			display: block;
+			position: relative;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	
+	&.hover-overlay {
+		.gallery-item {
+			overflow: hidden;
+			
+			&:hover {
+				.overlay {
+					visibility: visible;
+					opacity: .9;
+				}
+			}
+		}
+		
+		.overlay {
+			@extend %transit2;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			visibility: hidden;
+			
+			> div {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				font-size: 50px;
+				color: #ffffff;
+			}
+		}
+	}
+	
+	&.hover-simple {
+		.gallery-item {
+			&:hover {
+				> a {
+					transform: translateY(-10px);
+				}
+				
+				img {
+					box-shadow: 0 20px 40px rgba(0, 0, 0, .09);
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,124 @@
+.tm-countdown {
+	text-align: center;
+	max-width: 770px;
+	margin: 0 auto;
+	
+	.day,
+	.hour,
+	.minute,
+	.second {
+		text-align: center;
+		flex-grow: 1;
+	}
+	
+	.countdown-wrap {
+		display: flex;
+		align-items: center;
+	}
+	
+	&.style-1 {
+		.number {
+			display: inline-block;
+			font-size: 100px;
+			font-weight: 300;
+			line-height: 1;
+		}
+		
+		.text {
+			display: block;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+			font-weight: 700;
+			font-size: 14px;
+			margin-top: 18px;
+		}
+		
+		&.skin-light {
+			.number {
+				color: #ffffff;
+			}
+			
+			.text {
+				color: rgba(255, 255, 255, .7);
+			}
+		}
+	}
+	
+	&.style-2 {
+		.number {
+			display: block;
+			font-size: 100px;
+			line-height: 1;
+			font-weight: 700;
+			text-shadow: 7px 2px 0 rgba(0, 0, 0, .1);
+			margin-bottom: 15px;
+		}
+		
+		.text {
+			color: rgba(171, 171, 171, .7);
+			font-size: 16px;
+			font-weight: 700;
+			letter-spacing: 3.43px;
+			text-transform: uppercase;
+		}
+		
+		&.skin-light {
+			.number {
+				color: #ffffff;
+				text-shadow: 7px 2px 0 rgba(255, 255, 255, .2);
+			}
+			
+			.text {
+				color: rgba(255, 255, 255, .7);
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.tm-countdown {
+		&.style-1 {
+			.number {
+				font-size: 80px;
+			}
+		}
+		
+		&.style-2 {
+			.number {
+				font-size: 80px;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.tm-countdown {
+		&.style-1 {
+			.number {
+				font-size: 60px;
+			}
+		}
+		
+		&.style-2 {
+			.number {
+				font-size: 60px;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.tm-countdown {
+		&.style-1 {
+			.number {
+				font-size: 40px;
+			}
+		}
+		
+		&.style-2 {
+			.number {
+				font-size: 40px;
+			}
+		}
+	}
+}

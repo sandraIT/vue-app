@@ -1,0 +1,70 @@
+.header-14 {
+	.header-wrap {
+		display: flex;
+		align-items: center;
+	}
+
+	.wpml-ls-item-toggle {
+		padding: 18px 0;
+	}
+
+	.desktop-menu & {
+		.branding,
+		.header-right {
+			flex-shrink: 0;
+		}
+
+		.page-navigation{
+			flex-grow: 1;
+		}
+
+		.menu--primary {
+			position: static;
+			text-align: center;
+		}
+	}
+
+	.mobile-menu & {
+		.branding {
+			flex-grow: 1;
+		}
+
+		.header-right {
+			flex-shrink: 0;
+		}
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.header-14 {
+		.desktop-menu & {
+			.page-header-inner > .container-fluid {
+				padding: 0 35px;
+			}
+
+			.header-on-top-button {
+				min-width: 160px;
+			}
+		}
+	}
+}
+
+@media (min-width: 1420px) {
+	.header-14 {
+		.desktop-menu & {
+			.page-header-inner > .container-fluid {
+				padding: 0 85px;
+			}
+		}
+	}
+}
+
+
+@include media-breakpoint-down(xs) {
+	.header-14 {
+		.switcher-language-wrapper,
+		.header-social-networks {
+			display: none;
+		}
+	}
+}

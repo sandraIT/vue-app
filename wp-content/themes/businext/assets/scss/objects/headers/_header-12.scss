@@ -1,0 +1,194 @@
+.header-12 {
+
+	.page-header-inner {
+		border: 0;
+	}
+
+	.desktop-menu.admin-bar & {
+		top: 32px;
+	}
+
+	.desktop-menu & {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 99999;
+		width: 300px;
+		height: 100%;
+
+		.branding {
+			margin-bottom: 115px;
+		}
+
+		.page-header-inner {
+			height: 100%;
+			border: 0;
+			border-right: 1px solid transparent;
+		}
+
+		.header-wrap {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			padding: 43px 44px 70px;
+		}
+
+		.navigation {
+			flex-grow: 1;
+		}
+
+		.branding,
+		.header-bottom {
+			flex-shrink: 0;
+		}
+
+		.toggle-sub-menu {
+			position: static;
+		}
+
+		.menu--primary {
+			display: block;
+
+			.sm-simple {
+				display: block;
+
+				> li {
+
+					> a {
+
+						.menu-item-title {
+							padding-bottom: 0;
+
+							&:after {
+								left: -30px;
+								margin-left: 0;
+								top: 50%;
+								bottom: auto;
+								right: 0;
+								transform: translate(0, -50%);
+							}
+						}
+					}
+
+					&:hover,
+					&.current-menu-item,
+					&.current-menu-parent {
+						.menu-item-title {
+							&:after {
+								left: -18px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.menu__container {
+			width: 100%;
+
+			> li {
+				> a {
+					.toggle-sub-menu {
+						&:before {
+							right: 10px;
+							font-size: 18px;
+						}
+					}
+				}
+			}
+		}
+
+		.menu--primary {
+			display: block;
+
+			li {
+				display: block !important;
+				width: 100%;
+			}
+
+			a {
+				width: 100%;
+			}
+		}
+
+		.sub-menu {
+			&.mega-menu {
+				li {
+					> a {
+						white-space: normal;
+					}
+				}
+			}
+		}
+
+		.header-bottom {
+			font-size: 14px;
+			line-height: 1.7;
+		}
+
+		.header-social-networks {
+			a {
+				font-size: 18px;
+			}
+		}
+
+		.header-text {
+			margin-top: 25px;
+		}
+	}
+
+	.mobile-menu.admin-bar & {
+		top: 32px;
+	}
+
+	.mobile-menu & {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+
+		.header-wrap {
+			display: flex;
+			align-items: center;
+			padding: 0 15px;
+			height: 100%;
+		}
+
+		.branding {
+			flex-grow: 1;
+		}
+
+		.header-bottom {
+			flex-shrink: 0;
+			display: flex;
+			align-items: center;
+			margin-left: -10px;
+			margin-right: -10px;
+
+			> div {
+				padding: 0 10px;
+			}
+		}
+
+		.header-text {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 782px) {
+	.mobile-menu.admin-bar {
+		.header-12 {
+			top: 46px;
+		}
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	.header-12 {
+		.switcher-language-wrapper,
+		.header-social-networks {
+			display: none;
+		}
+	}
+}

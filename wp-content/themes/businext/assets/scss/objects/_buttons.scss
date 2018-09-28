@@ -1,0 +1,22 @@
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+	@extend %transit;
+	padding: 0 41px;
+	height: 60px;
+	line-height: 56px;
+	outline: none;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: transparent;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 15px;
+	cursor: pointer;
+	
+	&:focus {
+		outline: none;
+	}
+}

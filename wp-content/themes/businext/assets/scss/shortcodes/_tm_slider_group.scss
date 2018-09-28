@@ -1,0 +1,30 @@
+.tm-slider-group {
+	.tm-box-icon {
+		margin-bottom: 0;
+	}
+
+	&.style-separator {
+
+		.swiper-container {
+			padding-left: 1px;
+		}
+
+		.tm-group {
+			padding: 100px 57px;
+			border-left: 1px solid rgba(153, 153, 153, .1);
+			border-right: 1px solid rgba(153, 153, 153, .1);
+			margin-left: -1px;
+		}
+	}
+
+}
+
+@include media-breakpoint-down(sm) {
+	.tm-slider-group {
+		&.style-separator {
+			.tm-group {
+				padding: 60px 25px;
+			}
+		}
+	}
+}

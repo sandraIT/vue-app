@@ -1,0 +1,13 @@
+.tm-list-group {
+
+	&.style-01 {
+		> div {
+			border-top: 1px solid #ecebeb;
+			padding-top: 50px;
+
+			+ div {
+				margin-top: 50px;
+			}
+		}
+	}
+}

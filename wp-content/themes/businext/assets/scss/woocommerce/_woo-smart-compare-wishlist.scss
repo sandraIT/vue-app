@@ -1,0 +1,115 @@
+.woosw-list table.woosw-content-items .woosw-content-item .woosw-content-item--remove span:before {
+	font-family: 'Ionicons' !important;
+	content: '\f2d7' !important;
+}
+
+.woosw-area.woosw-area {
+	.woosw-inner {
+		.woosw-content {
+			max-width: 570px;
+			
+			.woosw-content-top {
+				.woosw-close {
+					@extend %transit2;
+					
+					&:before {
+						font-family: 'Ionicons' !important;
+						content: '\f2d7' !important;
+					}
+				}
+			}
+			
+			.woosw-content-mid table.woosw-content-items .woosw-content-item .woosw-content-item--remove {
+				padding: 0 !important;
+				
+				> span {
+					width: 30px !important;
+					height: 30px !important;
+					
+					&:before {
+						font-family: 'Ionicons' !important;
+						content: '\f2d7' !important;
+					}
+				}
+			}
+		}
+	}
+	
+	.woosw-content-item--add {
+		min-width: 140px;
+	}
+	
+	.woosw-content {
+		.button {
+			height: 50px !important;
+			line-height: 46px !important;
+		}
+	}
+	
+	.woosw-continue {
+		@extend %transit2;
+	}
+}
+
+.single-product {
+	.woo-single-summary {
+		.wishlist-btn,
+		.compare-btn {
+			float: left;
+			margin-left: 10px;
+			
+			a {
+				position: relative;
+				display: block;
+				width: 60px;
+				height: 60px;
+				line-height: 58px;
+				border-radius: 5px;
+				color: #ababab;
+				font-size: 0 !important;
+				padding: 0 !important;
+				border: 1px solid #ededed;
+				text-align: center;
+				
+				&:hover {
+					color: #ffffff !important;
+				}
+				
+				&:before {
+					display: block;
+					margin: 0;
+					font-size: 20px;
+					font-weight: 500;
+					font-family: Ionicons;
+					speak: none;
+					font-style: normal;
+					font-variant: normal;
+					text-transform: none;
+					text-rendering: auto;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+				}
+			}
+		}
+		
+		.woosw-btn {
+			&:before {
+				content: '\f388';
+			}
+		}
+		
+		.wooscp-btn {
+			&:before {
+				content: '\f4a8';
+			}
+		}
+		
+		.wishlist-btn .woosw-adding,
+		.compare-btn .wooscp-btn-adding {
+			&:before {
+				animation: load-spin 1.5s linear infinite;
+				content: '\f459';
+			}
+		}
+	}
+}

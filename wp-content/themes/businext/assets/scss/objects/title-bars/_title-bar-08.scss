@@ -1,0 +1,19 @@
+.page-title-bar-08 {
+	
+	.insight_core_breadcrumb {
+		text-align: right;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.page-title-bar-08 {
+		.page-title-bar-heading {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		
+		.insight_core_breadcrumb {
+			text-align: center;
+		}
+	}
+}

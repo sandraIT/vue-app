@@ -1,0 +1,55 @@
+.tm-service-pricing-menu {
+	.service-item-wrap {
+		position: relative;
+		padding: 14px 60px 0 24px;
+	}
+	
+	.service-header {
+		display: flex;
+		align-items: flex-end;
+		
+		&:before {
+			content: '\f400';
+			font-family: Ionicons;
+			position: absolute;
+			font-size: 10px;
+			top: 15px;
+			left: 0;
+			color: #d8d8d8;
+		}
+	}
+	
+	.service-name {
+		font-size: 15px;
+	}
+	
+	.service-text {
+		margin-top: 19px;
+		
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+	
+	.service-separator {
+		margin-left: 0 8px 4px 14px;
+		flex-grow: 1;
+		height: 1px;
+		background: #eeeeee;
+	}
+	
+	.service-cost {
+		position: absolute;
+		top: 0;
+		right: 0;
+		font-size: 15px;
+		font-weight: 800;
+		min-width: 41px;
+		height: 51px;
+		line-height: 51px;
+		padding: 0 5px;
+		text-align: center;
+		border-radius: 50%;
+		border: 1px solid #eeeeee;
+	}
+}

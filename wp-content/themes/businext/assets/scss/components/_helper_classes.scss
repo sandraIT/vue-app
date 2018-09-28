@@ -1,0 +1,26 @@
+.embed-responsive,
+.video-player {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	padding: 0;
+	height: 0;
+	iframe {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border: 0;
+	}
+}
+
+.embed-responsive-16by9,
+.video-player {
+	padding-bottom: 56.25%;
+}
+
+.instagram-media {
+	max-width: 100% !important;
+}

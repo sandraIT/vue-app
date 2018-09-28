@@ -1,0 +1,31 @@
+.tm-icon {
+	.icon {
+		position: relative;
+		font-size: 20px;
+		
+		span {
+			font-size: inherit;
+			font-weight: inherit;
+		}
+	}
+	
+	&.style-01 {
+		line-height: 0;
+		
+		.icon {
+			font-size: 40px;
+			width: 100px;
+			height: 100px;
+			display: inline-block;
+			border-radius: 50%;
+			color: #ffffff;
+		}
+		
+		span {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}

@@ -1,0 +1,200 @@
+.tm-maps {
+	position: relative;
+	
+	.map {
+		height: 100px;
+	}
+	
+	.btn-view-full-map {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 70px;
+		line-height: 70px;
+		font-size: 18px;
+		font-weight: 700;
+		text-align: center;
+		color: #ffffff;
+	}
+	
+	.btn-icon {
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+		font-size: 20px;
+		margin-left: 21px;
+	}
+}
+
+.gmap-marker-wrap {
+	padding: 20px;
+}
+
+.gmap-marker-title {
+	font-size: 20px;
+	margin-bottom: 14px;
+}
+
+.tm-maps {
+	&.overlay-style-01 {
+		
+		.animated-dot {
+			position: relative;
+			width: 20px;
+			height: 20px;
+			left: -9px;
+			top: -5px;
+		}
+		
+		.animated-dot .middle-dot {
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			position: absolute;
+			transform-origin: 50% 50%;
+			animation-fill-mode: forwards;
+			animation-iteration-count: infinite;
+		}
+		
+		.animated-dot .middle-dot:after {
+			width: 100%;
+			height: 100%;
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			content: ' ';
+			background-color: #ffffff;
+			border-radius: 50%;
+			z-index: 100;
+			opacity: 0;
+			transform-origin: 50% 50%;
+		}
+		
+		.animated-dot .signal {
+			width: 180px;
+			pointer-events: none;
+			height: 180px;
+			border-radius: 50%;
+			position: absolute;
+			left: -80px;
+			top: -80px;
+			opacity: 0;
+			animation: animationSignal cubic-bezier(0, .55, .55, 1) 2s;
+			transform-origin: 50% 50%;
+			animation-fill-mode: forwards;
+			animation-delay: .78s;
+			animation-iteration-count: infinite;
+		}
+		
+		.animated-dot .signal2 {
+			width: 180px;
+			height: 180px;
+			pointer-events: none;
+			border-radius: 50%;
+			position: absolute;
+			left: -80px;
+			top: -80px;
+			opacity: 0;
+			animation: animationSignal cubic-bezier(0, .55, .55, 1) 2s;
+			transform-origin: 50% 50%;
+			animation-fill-mode: forwards;
+			animation-delay: 1s;
+			animation-iteration-count: infinite;
+		}
+		
+	}
+	
+	&.overlay-style-02 {
+		
+		.animated-dot {
+			
+			width: 20px;
+			height: 20px;
+			left: -9px;
+			top: -5px;
+			position: relative;
+			
+			.middle-dot {
+				&:after {
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+					font-family: Ionicons;
+					content: '\f456';
+					font-size: 56px;
+				}
+			}
+			
+			.signal,
+			.signal2 {
+				width: 200px;
+				height: 200px;
+				pointer-events: none;
+				border-radius: 50%;
+				position: absolute;
+				left: -90px;
+				top: -90px;
+				opacity: 0;
+				animation: animationSignal2 cubic-bezier(0, .55, .55, 1) 2s;
+				transform-origin: 50% 50%;
+				animation-fill-mode: forwards;
+				animation-iteration-count: infinite;
+				animation-delay: .78s;
+			}
+			
+			.signal {
+				border: 2px solid rgba(0, 0, 0, .2);
+				box-shadow: inset 0 0 35px 10px rgba(0, 0, 0, .18);
+				animation-delay: .78s;
+			}
+			
+			.signal2 {
+				border: 2px solid #000000;
+				animation-delay: 1s;
+			}
+		}
+	}
+}
+
+@keyframes animationSignal {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+	}
+	
+	1% {
+		opacity: .14;
+	}
+	
+	20% {
+		opacity: .14;
+	}
+	
+	60% {
+		transform: scale(1);
+		opacity: 0;
+	}
+}
+
+@keyframes animationSignal2 {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+	}
+	
+	1% {
+		opacity: .29;
+	}
+	
+	20% {
+		opacity: .29;
+	}
+	
+	60% {
+		transform: scale(1);
+		opacity: 0;
+	}
+}

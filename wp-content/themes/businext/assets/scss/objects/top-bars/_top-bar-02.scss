@@ -1,0 +1,20 @@
+.top-bar-02 {
+	.top-bar-wrap {
+		height: 100%;
+	}
+	
+	.top-bar-right {
+		flex-grow: 1;
+		justify-content: flex-start;
+	}
+	
+	.switcher-language-wrapper {
+		padding-right: 15px;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.top-bar-02 {
+		display: none;
+	}
+}

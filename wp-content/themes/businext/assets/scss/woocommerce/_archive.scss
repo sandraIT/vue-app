@@ -1,0 +1,285 @@
+@keyframes load-spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce a.button.alt,
+.woocommerce input.button.alt,
+.button {
+	padding: 0 20px !important;
+	height: 60px;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 5px;
+	color: #ffffff;
+	font-weight: 700 !important;
+	font-size: 15px !important;
+	line-height: 56px !important;
+}
+
+.woocommerce {
+	form {
+		.form-row {
+			margin: 0 0 10px;
+			padding: 0;
+			textarea {
+				height: 130px;
+			}
+			
+			&.woocommerce-invalid {
+				.select2-container,
+				input.input-text,
+				select {
+					border-color: #d9534f;
+				}
+			}
+			
+			&.woocommerce-validated {
+				.select2-container,
+				input.input-text,
+				select {
+					border-color: #5cb85c;
+				}
+			}
+		}
+	}
+	
+	.amount,
+	.price {
+		font-weight: 600;
+		font-size: 15px;
+	}
+	
+	ins {
+		background: none;
+		color: #999999;
+	}
+	
+	del {
+		position: relative;
+		text-decoration: none;
+		
+		.amount {
+			color: #999999 !important;
+		}
+		
+		&:before {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background: #999999;
+			content: '';
+		}
+	}
+	
+	.star-rating {
+		color: #ffb805;
+		font-size: 16px;
+		float: none;
+		
+		&:before {
+			color: #dddddd;
+			content: 'SSSSS';
+		}
+	}
+	
+	div.quantity {
+		position: relative;
+		width: 100px;
+		
+		button {
+			background: none;
+			position: absolute;
+			right: 0;
+			padding: 0;
+			width: 30px;
+			height: 20px;
+			border: 0;
+			font-size: 0;
+			
+			span {
+				position: absolute;
+				left: 50%;
+				transform: translate(-50%, 0);
+				color: #cccccc;
+				font-size: 12px;
+			}
+		}
+		
+		.qty {
+			padding: 3px 30px 3px 10px;
+			width: 100%;
+			height: 40px;
+			border: 1px solid #f8f8f8;
+		}
+		
+		input::-webkit-outer-spin-button,
+		input::-webkit-inner-spin-button {
+			margin: 0;
+			-webkit-appearance: none;
+		}
+		
+		.increase {
+			top: 0;
+			span {
+				bottom: -2px;
+			}
+		}
+		
+		.decrease {
+			bottom: 0;
+			span {
+				top: -2px;
+			}
+		}
+	}
+	
+	nav.woocommerce-pagination {
+		text-align: center;
+		
+		ul {
+			margin: 70px -5px 0;
+			border: 0;
+			
+			li {
+				display: inline-block;
+				border: 0;
+				list-style-type: none;
+				
+				span,
+				a {
+					display: block;
+					font-weight: 700;
+					font-size: 18px;
+					padding: 0;
+					width: 60px;
+					color: #222222;
+					height: 60px;
+					line-height: 56px;
+					border: 2px solid transparent;
+					border-radius: 5px;
+					background: none !important;
+				}
+				
+				.dots {
+					width: 20px;
+					border: 0;
+					background: none;
+					color: #dddddd;
+					font-weight: 500;
+					font-size: 14px;
+				}
+				
+				.next,
+				.prev {
+					min-width: 60px;
+					width: auto;
+					font-size: 15px;
+					color: #bbbbbb;
+				}
+				
+				.prev {
+					i {
+						margin-right: 6px;
+					}
+				}
+				
+				.next {
+					i {
+						margin-left: 6px;
+					}
+				}
+				
+				span.current {
+					background: #fcfcfc !important;
+					border-color: #eeeeee;
+					color: #222222;
+				}
+			}
+		}
+	}
+	
+	.archive-shop-actions {
+		margin-bottom: 30px;
+		
+		.shop-filter-left,
+		.shop-filter-right {
+			margin-bottom: 10px;
+		}
+	}
+	
+	.woocommerce-result-count {
+		margin: 0;
+	}
+	
+	.shop-filter-right {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+	
+	.woocommerce-ordering {
+		display: inline-block;
+		margin: 0;
+		float: none;
+		
+		select {
+			height: 50px;
+		}
+	}
+	
+	.cats {
+		margin-bottom: 50px;
+		.product-category {
+			&:hover {
+				.cat-title,
+				.cat-count {
+					color: #ffffff;
+				}
+			}
+		}
+		
+		.cat-image {
+			img {
+				width: 100%;
+			}
+		}
+		
+		.cat-text {
+			@extend %transit;
+			position: absolute;
+			right: 0;
+			bottom: 30px;
+			left: 0;
+			z-index: 1;
+			padding: 15px;
+			background-color: rgba(255, 255, 255, .65);
+			text-transform: uppercase;
+		}
+		
+		.cat-title {
+			@extend %transit;
+		}
+		
+		.cat-count {
+			@extend %transit;
+			margin: 0;
+			color: initial;
+			font-size: 12px;
+		}
+	}
+}
+
+.woocommerce #respond input#submit.loading,
+.woocommerce a.button.loading,
+.woocommerce button.button.loading,
+.woocommerce input.button.loading {
+	opacity: 1;
+}

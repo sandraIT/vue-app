@@ -1,0 +1,70 @@
+.header-10 {
+	.header-wrap {
+		position: relative;
+	}
+	
+	.wpml-ls-item-toggle {
+		padding: 18px 0;
+	}
+	
+	.desktop-menu & {
+		.branding,
+		.header-right {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		
+		.menu--primary {
+			position: static;
+			text-align: center;
+		}
+	}
+	
+	.mobile-menu & {
+		.header-wrap {
+			display: flex;
+			align-content: center;
+		}
+		
+		.branding {
+			flex-grow: 1;
+		}
+		
+		.header-right {
+			flex-shrink: 0;
+		}
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	.header-10 {
+		.desktop-menu & {
+			.branding {
+				left: 35px;
+			}
+			
+			.header-right {
+				right: 35px;
+			}
+			
+			.header-on-top-button {
+				min-width: 160px;
+			}
+		}
+	}
+}
+
+@media (min-width: 1420px) {
+	.header-10 {
+		.desktop-menu & {
+			.branding {
+				left: 85px;
+			}
+			
+			.header-right {
+				right: 85px;
+			}
+		}
+	}
+}

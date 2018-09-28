@@ -1,0 +1,48 @@
+.tm-blockquote {
+	
+	blockquote {
+		margin: 0 !important;
+		padding: 28px 0 0;
+		border: 0;
+		
+		background: url('assets/images/blockquote.png') no-repeat 0 0;
+	}
+	
+	.quote-text {
+		font-size: 24px;
+		font-style: italic;
+		line-height: 2;
+	}
+	
+	.quote-footer {
+		margin-top: 31px;
+		display: flex;
+		align-items: center;
+		
+		.quote-photo {
+			flex-shrink: 0;
+			margin-right: 20px;
+			
+			img {
+				border-radius: 50%;
+				width: 60px;
+				height: 60px;
+			}
+		}
+		
+		.quote-info {
+			flex-grow: 1;
+		}
+		
+		.heading {
+			font-size: 18px;
+			font-weight: 700;
+			margin-bottom: 4px;
+		}
+		
+		.quote-position {
+			font-size: 14px;
+			font-style: italic;
+		}
+	}
+}

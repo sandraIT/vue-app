@@ -1,0 +1,58 @@
+.vc_progress_bar {
+	.vc_single_bar_wrapper {
+		padding-bottom: 7px;
+		
+		+ .vc_single_bar_wrapper {
+			margin-top: 27px;
+		}
+	}
+	
+	.vc_single_bar_title {
+		@extend %clearfix;
+		margin-bottom: 12px;
+		font-size: 15px;
+		font-weight: 600;
+		
+		.vc_label_units {
+			float: right;
+			font-weight: 500;
+		}
+	}
+	
+	.vc_general {
+		&.vc_single_bar {
+			height: 5px;
+			border-radius: 5px;
+			box-shadow: none;
+			background-color: #e0e0e0;
+			
+			.vc_label {
+				padding: 0;
+			}
+			
+			.vc_bar {
+				border-radius: inherit;
+			}
+		}
+	}
+	
+	.vc_bar {
+		&:after {
+			position: absolute;
+			top: 50%;
+			right: -1px;
+			width: 16px;
+			height: 16px;
+			transform: translate(0, -50%);
+			background: inherit;
+			content: '';
+			border-radius: 50%;
+		}
+	}
+	
+	&.style-2 {
+		.vc_single_bar_title {
+			width: 100% !important;
+		}
+	}
+}

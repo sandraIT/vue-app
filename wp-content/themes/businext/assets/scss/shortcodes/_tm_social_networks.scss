@@ -1,0 +1,221 @@
+.tm-social-networks {
+	line-height: 0;
+	
+	ul {
+		@extend %clearfix;
+		display: inline-block;
+		padding: 0;
+		margin: 0 -8px;
+	}
+	
+	.item {
+		list-style-type: none;
+	}
+	
+	.link {
+		padding: 5px 8px;
+	}
+	
+	.link-icon {
+		@extend %transit2;
+	}
+	
+	&.layout-list {
+		display: block;
+	}
+	
+	&.layout-inline {
+		.item {
+			display: inline-block;
+		}
+	}
+	
+	&.layout-two-columns {
+		
+		ul {
+			margin: 0 -10px;
+		}
+		
+		.item {
+			display: block;
+			float: left;
+			width: 50%;
+		}
+		
+		.link {
+			padding: 5px 10px;
+		}
+	}
+	
+	&.style-icons {
+		font-size: 16px;
+	}
+	
+	&.style-large-icons {
+		font-size: 18px;
+		
+		ul {
+			margin: 0 -14px;
+		}
+		
+		.link {
+			padding: 5px 14px;
+		}
+	}
+	
+	&.style-solid-square-icon {
+		
+		ul {
+			margin: 0;
+			padding: 1px 0 0 1px;
+		}
+		
+		li {
+			float: left;
+			border: 1px solid rgba(238, 238, 238, .11);
+			margin: -1px 0 0 -1px;
+			
+			&:first-child {
+				border-top-left-radius: 5px;
+				border-bottom-left-radius: 5px;
+			}
+			
+			&:last-child {
+				border-top-right-radius: 5px;
+				border-bottom-right-radius: 5px;
+			}
+		}
+		
+		.link {
+			font-size: 16px;
+			display: block;
+			text-align: center;
+			height: 50px;
+			width: 50px;
+			position: relative;
+		}
+		
+		.link-icon {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	
+	&.style-solid-rounded-icon {
+		
+		ul {
+			margin: 0;
+		}
+		
+		li {
+			float: left;
+			
+			+ li {
+				margin-left: 10px;
+			}
+		}
+		
+		.item {
+			&:hover {
+				.link-icon {
+					color: #ffffff;
+				}
+			}
+		}
+		
+		.link {
+			font-size: 24px;
+			display: block;
+			text-align: center;
+			height: 60px;
+			width: 60px;
+			border: 1px solid #eeeeee;
+			border-radius: 50%;
+			position: relative;
+		}
+		
+		.link-icon {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	
+	&.style-solid-rounded-icon-02 {
+		
+		ul {
+			margin: 0;
+		}
+		
+		li {
+			float: left;
+			
+			+ li {
+				margin-left: 10px;
+			}
+		}
+		
+		.item {
+			&:hover {
+				.link-icon {
+					color: #ffffff;
+				}
+			}
+		}
+		
+		.link {
+			font-size: 16px;
+			display: block;
+			text-align: center;
+			height: 45px;
+			width: 45px;
+			color: #222222;
+			border: 2px solid rgba(221, 221, 221, .65);
+			border-radius: 50%;
+			position: relative;
+		}
+		
+		.link-icon {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	
+	&.style-icon-title {
+		.link-icon {
+			font-size: 14px;
+			min-width: 25px;
+			margin-right: 10px;
+		}
+	}
+	
+	&.style-title {
+		
+		ul {
+			margin: 0 -13px;
+		}
+		
+		.link {
+			padding: 5px 13px;
+		}
+		
+		.link-text {
+			font-size: 16px;
+			font-weight: 700;
+		}
+	}
+	
+	.link {
+		display: inline-block;
+	}
+	
+	// fix wp 4.7 widget
+	br {
+		display: none;
+	}
+}

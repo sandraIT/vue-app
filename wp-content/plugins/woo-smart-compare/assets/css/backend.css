@@ -1,0 +1,12 @@
+ul.wooscp-fields {
+    position: relative;
+}
+
+ul.wooscp-fields li.wooscp-fields-item label {
+    cursor: move;
+}
+
+#_wooscp_search_cats {
+    width: 25em;
+    height: 120px;
+}

@@ -1,0 +1,57 @@
+.wrap_svl_center {
+	line-height: 0;
+}
+
+#powerTip#powerTip {
+	background: #4dafff;
+	border-radius: 5px;
+	box-shadow: 0 2px 20px rgba(0, 0, 0, .06);
+	width: 250px;
+	padding: 26px 30px;
+	
+	&.n:before {
+		border-top: 10px solid #4dafff;
+	}
+	
+	&.e:before {
+		border-right: 10px solid #4dafff;
+	}
+	
+	&.s:before {
+		border-bottom: 10px solid #4dafff;
+	}
+	
+	&.w:before {
+		border-left: 10px solid #4dafff;
+	}
+	
+	&.ne,
+	&.nw {
+		&:before {
+			border-top: 10px solid #4dafff;
+		}
+	}
+	
+	&.se,
+	&.sw {
+		&:before {
+			border-bottom: 10px solid #4dafff;
+		}
+	}
+	
+	&.nw-alt,
+	&.ne-alt,
+	&.sw-alt,
+	&.se-alt {
+		&:before {
+			border-top: 10px solid #4dafff;
+		}
+	}
+	
+	&.sw-alt,
+	&.se-alt {
+		&:before {
+			border-bottom: 10px solid #4dafff;
+		}
+	}
+}

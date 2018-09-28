@@ -1,0 +1,47 @@
+.tm-category-feature {
+	
+	&.style-01 {
+		text-align: center;
+		width: 100%;
+		
+		.modern-grid {
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 1px;
+			border-radius: 5px;
+			overflow: hidden;
+			width: 100%;
+			background: #dddddd;
+		}
+		
+		.grid-item {
+			&.current,
+			&:hover {
+				.icon {
+					color: #ffffff;
+				}
+				
+				.cat-name {
+					color: #ffffff;
+				}
+			}
+		}
+		
+		.cat-item-wrap {
+			@extend %transit;
+			background: #ffffff;
+			height: 100%;
+			padding: 20px 10px;
+		}
+		
+		.icon {
+			font-size: 42px;
+			margin-bottom: 5px;
+		}
+		
+		.cat-name {
+			word-break: break-word;
+			font-size: 15px;
+			line-height: 1.266;
+		}
+	}
+}
